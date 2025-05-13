@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optiinvest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./assets/unifecaf-logo-white.png" alt="UniFECAF logo">
+        </div>
+        <nav>
+            <ul class="nav-items">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#simulacao-box">Simular</a>
+            </ul>
+        </nav>
+    </header>
+    <div id="inicio">
+        <h1>Otimização de Carteira de Investimentos</h1>
+        <p>Maximize retornos e minimize riscos usando modelagem matemática avançada</p>
+        <a href="#simulacao-box" id="c">Começar Simulação</a>
+    </div>
+    <div id="sobre">
+        <h2>Sobre o Projeto</h2>
+        <div id="infos">
+            <div class="info">
+                <img src="./assets/eficiencia.png" alt="Ícone de Eficiência">
+                <h3>Eficiência</h3>
+                <p>Alocar recursos de maneira eficiente e otimizada.</p>
+            </div>
+            <div class="info">
+                <img src="./assets/seguranca.png" alt="Ícone de Segurança">
+                <h3>Segurança</h3>
+                <p>Equilibrar o retorno esperado e o nível de risco.</p>
+            </div>
+            <div class="info">
+                <img src="./assets/analise (1).png" alt="Ícone de Análise">
+                <h3>Análise</h3>
+                <p>Aplicar técnicas quantitativas para decisões fundamentadas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="simulacao-box">
+        <h2>Simulação Rápida</h2>
+        <div id="btns">
+            <button id="petr">PETROBRAS</button>
+            <button id="itau">ITAÚ</button>
+        </div>
+        <div id="grafico-box">
+            <p class="ph">----------------------------------------------------------------------grafico aqui----------------------------------------------------------------------</p>
+        </div>
+
+        <form class="form-simulação">
+            <p>Capital Disponível</p>
+            <input type="text" id="capital" name="capital" placeholder="R$ 100000">
+            <div id="input-row">
+                <div class="input-group">
+                    <p>Tolerancia à Risco</p>
+                    <select name="niveis" id="niveis">
+                        <option value="Leve">Leve</option>
+                        <option value="Moderada">Moderada</option>
+                        <option value="Grave">Grave</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <p>Retorno Esperado Mínimo</p>
+                    <input type="text" id="retorno" name="retorno" placeholder="%">
+                </div>
+            </div>
+        </form>
+        <p class="ph">----------------------------------------------------------------------resultado aqui----------------------------------------------------------------------</p>
+        <a href="#" id="s">Simular</a>
+    </div>
+
+    <p class="footer">
+        <i>Desenvolvido por: Kauã Santos, Gustavo Mattos, Murilo Barbosa, Rodrigo Illydio e Pedro Benevides </i>
+    </p>
+    <script src="script.js"></script>
+</body>
+
+</html>

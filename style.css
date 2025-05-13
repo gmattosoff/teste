@@ -1,0 +1,288 @@
+* {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(21, 21, 76);
+  color: white;
+  padding: 12px 40px;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo img {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-items {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-items a:hover {
+  color: #33db89;
+}
+
+a:visited {
+  color: inherit;
+}
+
+button {
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  font-size: 15px;
+  width: 120px;
+  margin: 40px;
+  cursor: pointer;
+}
+
+#petr {
+  background-color: red;
+  border: 1px solid red;
+}
+
+#itau {
+  background-color: blue;
+  border: 1px solid blue;
+}
+
+#petr:hover {
+  background-color: inherit;
+  color: red;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#itau:hover {
+  background-color: inherit;
+  color: blue;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#c {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  background-color: rgb(21, 21, 76);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#s {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  background-color: rgb(21, 21, 76);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#s:hover, #c:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(21, 21, 76);
+  font-weight: bold;
+  border: 1px solid rgb(21, 21, 76);
+  transition: 0.3s;
+}
+
+#inicio,
+#sobre,
+#simular {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sobre, #simular {
+  margin-top: -220px;
+}
+
+#inicio {
+  margin: 0;
+  height: 110vh;
+}
+
+#inicio h1 {
+  font-size: 40px;
+}
+#inicio p {
+  font-size: 18px;
+}
+
+#sobre {
+  font-size: 25px;
+  height: 110vh;
+  text-align: center;
+}
+
+#sobre p {
+  font-size: 20px;
+}
+
+#infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%px;
+  flex-shrink: 0;
+}
+
+.info img {
+  width: 70px;
+  margin-bottom: 15px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+  max-width: 260px;
+  line-height: 1.6;
+}
+
+#simulacao-box {
+  background-color: #f9fbfd;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#simulacao-box h2 {
+  font-size: 30px;
+}
+
+#grafico-box {
+  margin: 50px;
+}
+
+.form-simulação p {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 420px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#input-row {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  width: 100px;
+  margin-left: -20px;
+}
+
+.input-group {
+  flex: 1;
+}
+
+#niveis, #retorno {
+  width: 182px
+}
+
+.ph {
+  margin: 120px 0;
+}
+
+img {
+  width: 70px;
+}
+
+div {
+  margin: 20px;
+  max-width: 800px;
+}
+
+.footer {
+  margin: 30px;
+  font-size: 20px;
+}
